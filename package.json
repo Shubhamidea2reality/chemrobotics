@@ -1,0 +1,41 @@
+{
+  "name": "chemrobo_adminpanel_api",
+  "version": "1.0.0",
+  "description": "api for chemrobo admin panel",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chemrobo",
+    "api"
+  ],
+  "author": "Nagaraj",
+  "license": "ISC",
+  "dependencies": {
+    "basic-ftp": "^4.6.6",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "cookie-parser": "^1.4.5",
+    "cron": "^2.3.0",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-myconnection": "^1.0.4",
+    "fs-extra": "^10.1.0",
+    "image-base64-ftp": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoclient": "^1.0.3",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.1",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.22"
+  }
+}
