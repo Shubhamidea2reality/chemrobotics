@@ -1,42 +1,8 @@
 import { MongoClient } from "mongodb";
 
-/*
- * GET Dropdown Values Details.
- */
-// export const GetDropDownValues = (req, res) => {
-//   try {
-//     var postdata = JSON.parse(JSON.stringify(req.body));
-
-//     //console.log(postdata);
-
-//     req.getConnection(function (err, connection) {
-//       var query = connection.query(
-//         `CALL dbp_Get_Dropdown_Values('${postdata.searchword}','${postdata.tablename}','${postdata.columnname}',${postdata.pagenumber},${postdata.rowscount});`,
-//         function (err, rows) {
-//           if (err) {
-//             console.log("Error Selecting : %s ", err);
-//             res.send({ status: "error", Message: err.sqlMessage });
-//           } else {
-//             //console.log(rows);
-//             res.send(rows[0]);
-//           }
-//         }
-//       );
-
-//       //console.log(query.sql);
-//     });
-//   } catch (e) {
-//     console.log("Error log: %s ", e);
-//     response.status(400).send("Bad Request!");
-//   }
-// };
 
 
-/* Get dropdown from mongoDB ---*/
-
-//import { JsonWebTokenError } from "jsonwebtoken";
-
-
+/* Get dropdown beta from mongoDB ---*/
 export const GetDropDownValues = async (req, res) => {
   try {
     const postdata = JSON.parse(JSON.stringify(req.body));

@@ -133,7 +133,9 @@ import {
   technical_supplier_route,
   global_patent_watch_route,
   email_accessroute,
-  imageftp_route
+  imageftp_route,
+  dataserachroute_beta,
+  agropharm_xim_route_beta
 } from "./routes/routes.mjs";
 
 
@@ -183,26 +185,26 @@ app.post("/get_imagebase64", verify, imageftp_route.GetBase64Image);
 
 // getdropdown
 //Get Dropdown Values
-app.post("/get_dropdownvalues",  dataserachroute.GetDropDownValues);
+app.post("/get_dropdownvalues", dataserachroute.GetDropDownValues);
 
 console.log("get template hit 1 ........");
-app.post("/get_template_mongo",  mongodb_templateroute.GettemplateDetails);
+app.post("/get_template_mongo", mongodb_templateroute.GettemplateDetails);
 
 ///// ------ CHEMROBOTIS DATABSES APPS -----/////
 
-
-// Get Common Data
-app.post("/get_chemroboticsdata", dataserachroute.GetChemroboticsData);
+//beta version start
+// Get Common Data----------------------------------------------------------------------------------------------------------------
+app.post("/get_chemroboticsdata", dataserachroute_beta.GetChemroboticsData);
 
 //Get Dropdown Values
-app.post("/get_dropdownvalues", dataserachroute.GetDropDownValues);
+app.post("/get_dropdownvalues", dataserachroute_beta.GetDropDownValues);
 
 //agropharm_xim
 app.post(
   "/get_agropharm_xim_chartdata",
-  
-  agropharm_xim_route.GetChartData
+  agropharm_xim_route_beta.GetChartData
 );
+//beta version end-----------------------------------------------------------------------------------------------------------------------
 
 // Get Common Data
 app.post("/get_chemroboticsdata", verify, dataserachroute.GetChemroboticsData);

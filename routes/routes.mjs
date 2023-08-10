@@ -28,6 +28,7 @@ export * as common_configroute from "./common_config.mjs";
 //#region -------------- CHEMROBOTICS API ROUTE -------//
 //--common data search route
 export * as dataserachroute from "./datasearch.mjs";
+
 //--agropharm_xim route
 export * as agropharm_xim_route from "./agropharma_xim.mjs";
 //--Company Directory
@@ -55,3 +56,12 @@ export * as email_accessroute from "./email.mjs";
 export * as imageftp_route from "./imageftp.mjs";
 
 //#endregion -------------- END COMMON HELPER API ROUTE ---//
+
+
+
+//beta version
+//--common data search route
+export * as dataserachroute_beta from "./datasearch_beta.mjs";
+
+//--agropharm_xim route
+export * as  agropharm_xim_route_beta from "./agropharma_xim_beta.mjs";

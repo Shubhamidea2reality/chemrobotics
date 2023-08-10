@@ -5,7 +5,7 @@ import db from "../../app/config/db/mongodbconnection.mjs";
  * GET Template Table Details.
  */
 export const GetTemplateTableDetails = async (req, res, next) => {
-  console.log("get template hit........");
+  // console.log("get template hit........");
   try {
     console.log("get template hit........");
     var postdata = req.body;
